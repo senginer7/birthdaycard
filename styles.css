@@ -1,0 +1,341 @@
+.mainbody
+{
+ text-align:center;
+ width:100%;
+ margin:100px auto 0px;
+ padding:0px;
+ font-family:helvetica;
+ background-color:#F79F81;
+}
+ /* .office-banner {
+    background-color: #e2ddd8;
+    font-family: "Arial";
+    padding: 0.125em;
+    font-size: 4em;
+    text-align: center;
+    white-space: nowrap;
+    transform: rotate(-10deg);
+    position: fixed;
+    top: 40%;
+    left: -5%;
+    right: -5%;
+    z-index: 100;
+    margin-top: 0;
+  } */
+  
+#wrapper
+{
+ text-align:center;
+ margin:0 auto;
+ padding:0px;
+ /* width:995px; */
+ width: 85%;
+}
+#effect
+{
+ background-color:rgb(67, 150, 214);
+ position:relative;	
+ width:100%;
+ height:85%;
+ /* margin-left:300px; */
+ box-shadow:0px 0px 10px 0px #610B0B;
+}
+#effect p
+{
+ margin-top:10px;
+ font-size:30px;
+ color:#F79F81;
+}
+#curtain1
+{
+ top:0px;
+ position:absolute;
+ left:0px;
+ height:100%;
+ width: 60%;
+}
+#curtain2
+{
+    top:0px;
+    position:absolute;
+    right:0px;
+    height:100%;
+    width: 60%;
+}
+.curtainp
+{
+ margin-top:20px;
+ width:150px;
+ height:45px;
+ border-radius:20px;
+ color:white;
+ background-color:#B43104;
+ border:none;
+ border-bottom:6px solid #8A2908;
+}
+#birthday{
+    text-align: center;
+    /* display: inline-block; */
+    width: 40%;
+    /* margin-left: auto;
+    margin-right: 29.5vw; */
+    margin: auto;
+    font-size: 2.5rem;
+    font-family: 'Lobster', cursive;
+
+}
+.hov:hover{
+    -moz-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+    -moz-transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    transform:rotate(360deg);
+    color: rgb(23, 124, 23);
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+/* next.html */
+*,
+*:before,
+*:after {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/* body {
+	background-color: #ef8172;
+} */
+
+
+.middlebody {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+.wrapper {
+	width: 320px;
+	height: 470px;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.container {
+	background-color: #ffffff;
+	position: relative;
+	height: 360px;
+    width: 250px;
+	border-radius: 8px;
+	-webkit-box-shadow: 0 30px 40px rgb(68, 52, 2, 0.3);
+	box-shadow: 0 30px 40px rgb(68, 52, 2, 0.3);
+}
+/* a {
+	display: block;
+	width: 100%;
+	background-color: #ffffff;
+	position: absolute;
+	bottom: 0;
+	padding: 12px 0;
+	text-align: center;
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	text-decoration: none;
+	color: #000000;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 30px 40px rgb(68, 52, 2, 0.3);
+	box-shadow: 0 30px 40px rgb(68, 52, 2, 0.3);
+} */
+.cake {
+	width: 100%;
+	position: absolute;
+	bottom: 50px;
+}
+.bottom-layer,
+.top-layer,
+.middle-layer {
+	height: 80px;
+	width: 240px;
+	position: relative;
+	margin: auto;
+	background-repeat: repeat;
+	background-size: 100% 100%, 60px 100px;
+	background-position: 28px 0;
+	background-image: -o-linear-gradient(
+			transparent 50px,
+			#fedbab 50px,
+			#fedbab 60px,
+			transparent 60px
+		),
+		-o-radial-gradient(30px 5px, circle, #994c10 30px, #fcbf29 31px);
+	background-image: linear-gradient(
+			transparent 50px,
+			#fedbab 50px,
+			#fedbab 60px,
+			transparent 60px
+		),
+		radial-gradient(circle at 30px 5px, #994c10 30px, #fcbf29 31px);
+	border-radius: 10px 10px 0 0;
+}
+.middle-layer {
+	-webkit-transform: scale(0.85);
+	-ms-transform: scale(0.85);
+	transform: scale(0.85);
+	top: 72px;
+	-webkit-animation: rise-1 2s forwards;
+	animation: rise-1 2s forwards;
+}
+@-webkit-keyframes rise-1 {
+	100% {
+		top: 7px;
+	}
+}
+@keyframes rise-1 {
+	100% {
+		top: 7px;
+	}
+}
+.top-layer {
+	-webkit-transform: scale(0.7);
+	-ms-transform: scale(0.7);
+	transform: scale(0.7);
+	top: 144px;
+	-webkit-animation: rise-2 2s 2s forwards;
+	animation: rise-2 2s 2s forwards;
+}
+@-webkit-keyframes rise-2 {
+	100% {
+		top: 26px;
+	}
+}
+@keyframes rise-2 {
+	100% {
+		top: 26px;
+	}
+}
+.candle {
+	background: -o-repeating-linear-gradient(
+		45deg,
+		#fd3018 0,
+		#fd3018 5px,
+		#ffa89e 5px,
+		#ffa89e 10px
+	);
+	background: repeating-linear-gradient(
+		45deg,
+		#fd3018 0,
+		#fd3018 5px,
+		#ffa89e 5px,
+		#ffa89e 10px
+	);
+	height: 45px;
+	width: 15px;
+	position: absolute;
+	margin: auto;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	-webkit-animation: rise-3 1s 4s forwards;
+	animation: rise-3 1s 4s forwards;
+}
+@-webkit-keyframes rise-3 {
+	100% {
+		bottom: 202px;
+	}
+}
+@keyframes rise-3 {
+	100% {
+		bottom: 202px;
+	}
+}
+.candle:after {
+	content: "";
+	position: absolute;
+	height: 16px;
+	width: 16px;
+	background-color: #ffb62d;
+	border-radius: 0 50% 50% 50%;
+	-webkit-transform: scale(0) rotate(45deg);
+	-ms-transform: scale(0) rotate(45deg);
+	transform: scale(0) rotate(45deg);
+	bottom: 50px;
+	left: -0.5px;
+	-webkit-animation: flame 1.5s 5s forwards;
+	animation: flame 1.5s 5s forwards;
+}
+@-webkit-keyframes flame {
+	100% {
+		-webkit-transform: scale(1) rotate(45deg);
+		transform: scale(1) rotate(45deg);
+	}
+}
+@keyframes flame {
+	100% {
+		-webkit-transform: scale(1) rotate(45deg);
+		transform: scale(1) rotate(45deg);
+	}
+}
+
+h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 30px;
+}
+.nxt{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    margin-bottom: 65px;
+    margin-right: 65px;
+}
+/* final.html */
+.finalbody{
+    background-color: #ffa89e;
+}
+.row{
+    width: 75vw;
+    margin: 50px auto;
+}
+.row div{
+    /* margin-top: 100px; */
+    font-size: 3vh;
+    padding: 35px;
+    text-align: justify;
+}
+.row h1{
+    text-align: center;
+    font-size: 48px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 60px;
+}
+div .fun{
+    text-align: center;
+    font-size: 2.5rem;
+}
+.carousel-inner{
+    background-color: rgb(206, 148, 213);
+    border-radius: 10px;
+}
